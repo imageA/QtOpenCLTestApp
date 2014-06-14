@@ -13,11 +13,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     square_ocl.cpp \
-    global.cpp
+    global.cpp \
+    performance_ocl.cpp
 
 HEADERS  += mainwindow.h \
     square_ocl.h \
-    global.h
+    global.h \
+    performance_ocl.h
 
 
 INCLUDEPATH += -L~/workspace/opencv-2.4.4/include

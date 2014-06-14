@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun Jun 8 10:12:49 2014
+** Created: Sat Jun 14 20:50:33 2014
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -45,6 +45,8 @@ public:
     QTextEdit *te_Result;
     QLabel *lb_Version;
     QPushButton *bt_Stop;
+    QGroupBox *gb_oclList;
+    QComboBox *comboBox;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -115,6 +117,12 @@ public:
         bt_Stop = new QPushButton(centralWidget);
         bt_Stop->setObjectName(QString::fromUtf8("bt_Stop"));
         bt_Stop->setGeometry(QRect(530, 30, 81, 27));
+        gb_oclList = new QGroupBox(centralWidget);
+        gb_oclList->setObjectName(QString::fromUtf8("gb_oclList"));
+        gb_oclList->setGeometry(QRect(430, 140, 171, 51));
+        comboBox = new QComboBox(gb_oclList);
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comboBox->setGeometry(QRect(20, 20, 151, 27));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -143,6 +151,7 @@ public:
         cb_ExampleList->insertItems(0, QStringList()
          << QApplication::translate("MainWindow", "SQUARE", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("MainWindow", "HOG", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "OCL LIBRARY PERFORMANCE", 0, QApplication::UnicodeUTF8)
         );
         bt_Start->setText(QApplication::translate("MainWindow", "Start", 0, QApplication::UnicodeUTF8));
         gb_OpType->setTitle(QApplication::translate("MainWindow", "CL On&&Off", 0, QApplication::UnicodeUTF8));
@@ -151,6 +160,7 @@ public:
         gb_Result->setTitle(QApplication::translate("MainWindow", "RESULT", 0, QApplication::UnicodeUTF8));
         lb_Version->setText(QApplication::translate("MainWindow", "<html><head/><body><p>OpenCV Version : </p></body></html>", 0, QApplication::UnicodeUTF8));
         bt_Stop->setText(QApplication::translate("MainWindow", "Stop", 0, QApplication::UnicodeUTF8));
+        gb_oclList->setTitle(QApplication::translate("MainWindow", "ocl Library List", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

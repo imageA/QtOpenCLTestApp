@@ -36,6 +36,8 @@ private slots:
     void Start();
     void Stop();
 
+    void on_cb_ExampleList_currentIndexChanged(int index);
+
 public:
 
 private:

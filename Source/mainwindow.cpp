@@ -52,6 +52,8 @@ void MainWindow::Stop()
 
 void MainWindow::Init()
 {
+    ui->gb_oclList->setVisible(false);
+
     // Event
     connect(ui->bt_Start,SIGNAL(clicked()), this, SLOT(Start()));
     connect(ui->bt_Stop,SIGNAL(clicked()), this, SLOT(Stop()));
@@ -69,3 +71,15 @@ void MainWindow::OpenCVTest()
 
 }
 
+
+void MainWindow::on_cb_ExampleList_currentIndexChanged(int index)
+{
+    if(index == 3)
+    {
+        ui->gb_oclList->setVisible(false);
+    }
+    else
+    {
+        ui->gb_oclList->setVisible(true);
+    }
+}

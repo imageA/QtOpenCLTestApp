@@ -6,6 +6,7 @@
 
 #define QT_EXAMPLE_SQUARE_H 0
 #define QT_EXAMPLE_HOG_H 1
+#define QT_EXAMPLE_PERFORMANCE_H 2
 
 #include <QMainWindow>
 #include <opencv2/core/core.hpp>

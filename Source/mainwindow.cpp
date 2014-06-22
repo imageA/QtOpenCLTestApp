@@ -1,10 +1,12 @@
-#include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "mainwindow.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
 
     Init();
@@ -28,12 +30,20 @@ void MainWindow::Start()
             result = square_ocl.start_preview(OPENCL_CL_ON_H, ui->lb_View);
         else
             result = square_ocl.start_preview(OPENCL_CL_OFF_H, ui->lb_View);
+
+        ui->te_Result->setText( result );
     }
     else if(index == QT_EXAMPLE_HOG_H)
     {
     }
+    else if(index == QT_EXAMPLE_PERFORMANCE_H)
+    {
+        PerformanceOcl performance_ocl;
+        performance_ocl.set_result_test(ui->te_Result);
+        performance_ocl.set_tests_filter(ui->cb_LibraryList->currentText().toUtf8().constData());
+        performance_ocl.start_performance_test();
+    }
 
-    ui->te_Result->setText( result );
 
 }
 

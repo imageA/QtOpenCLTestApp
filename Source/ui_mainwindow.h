@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sat Jun 14 20:50:33 2014
+** Created: Sun Jun 22 16:20:48 2014
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -46,7 +46,7 @@ public:
     QLabel *lb_Version;
     QPushButton *bt_Stop;
     QGroupBox *gb_oclList;
-    QComboBox *comboBox;
+    QComboBox *cb_LibraryList;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -120,9 +120,9 @@ public:
         gb_oclList = new QGroupBox(centralWidget);
         gb_oclList->setObjectName(QString::fromUtf8("gb_oclList"));
         gb_oclList->setGeometry(QRect(430, 140, 171, 51));
-        comboBox = new QComboBox(gb_oclList);
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
-        comboBox->setGeometry(QRect(20, 20, 151, 27));
+        cb_LibraryList = new QComboBox(gb_oclList);
+        cb_LibraryList->setObjectName(QString::fromUtf8("cb_LibraryList"));
+        cb_LibraryList->setGeometry(QRect(20, 20, 151, 27));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -161,6 +161,73 @@ public:
         lb_Version->setText(QApplication::translate("MainWindow", "<html><head/><body><p>OpenCV Version : </p></body></html>", 0, QApplication::UnicodeUTF8));
         bt_Stop->setText(QApplication::translate("MainWindow", "Stop", 0, QApplication::UnicodeUTF8));
         gb_oclList->setTitle(QApplication::translate("MainWindow", "ocl Library List", 0, QApplication::UnicodeUTF8));
+        cb_LibraryList->clear();
+        cb_LibraryList->insertItems(0, QStringList()
+         << QApplication::translate("MainWindow", "matchTemplate", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "PyrLKOpticalFlow", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "pyrDown", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "pyrUp", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Canny", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Haar", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "blend", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "columnSum", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "HOG", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "SURF", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "BruteForceMatcher", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "lut", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Exp", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Log", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Add", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Mul", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Div", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Absdiff", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "CartToPolar", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "PolarToCart", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "magnitude", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Transpose", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Flip", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "minMax", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "minMaxLoc", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Sum", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "countNonZero", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Phase", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "bitwise_and", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "bitwise_or", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "bitwise_xor", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "bitwise_not", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "compare", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "pow", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "MagnitudeSqr", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "AddWeighted", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Blur", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Laplacian", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Erode", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Sobel", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Scharr", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "GaussianBlur", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "equalizeHist", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "CopyMakeBorder", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "cornerMinEigenVal", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "cornerHarris", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "integral", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "WarpAffine", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "WarpPerspective", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "resize", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "threshold", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "meanShiftFiltering", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "meanShiftProc", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "ConvertTo", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "copyTo", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "setTo", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Merge", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "Split", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "norm", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "remap", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "cvtColor", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "filter2D", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "dft", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("MainWindow", "gemm", 0, QApplication::UnicodeUTF8)
+        );
     } // retranslateUi
 
 };

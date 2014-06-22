@@ -314,7 +314,7 @@
     <property name="title">
      <string>ocl Library List</string>
     </property>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="cb_LibraryList">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -323,6 +323,326 @@
        <height>27</height>
       </rect>
      </property>
+     <item>
+      <property name="text">
+       <string>matchTemplate</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PyrLKOpticalFlow</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>pyrDown</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>pyrUp</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Canny</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Haar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>blend</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>columnSum</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>HOG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SURF</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BruteForceMatcher</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>lut</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Exp</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Log</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mul</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Div</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Absdiff</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CartToPolar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PolarToCart</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>magnitude</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Transpose</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Flip</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>minMax</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>minMaxLoc</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sum</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>countNonZero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Phase</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>bitwise_and</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>bitwise_or</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>bitwise_xor</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>bitwise_not</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>compare</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>pow</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MagnitudeSqr</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AddWeighted</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Blur</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Laplacian</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Erode</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sobel</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Scharr</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GaussianBlur</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>equalizeHist</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CopyMakeBorder</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>cornerMinEigenVal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>cornerHarris</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>integral</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>WarpAffine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>WarpPerspective</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>resize</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>threshold</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>meanShiftFiltering</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>meanShiftProc</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ConvertTo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>copyTo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>setTo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Merge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Split</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>norm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>remap</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>cvtColor</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>filter2D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dft</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>gemm</string>
+      </property>
+     </item>
     </widget>
    </widget>
   </widget>

@@ -21,6 +21,7 @@ HEADERS  += mainwindow.h \
     global.h \
     performance_ocl.h
 
+FORMS    += mainwindow.ui
 
 INCLUDEPATH += -L~/workspace/opencv-2.4.4/include
 
@@ -42,4 +43,4 @@ INCLUDEPATH += -L/usr/include/CL
 
 LIBS += -lOpenCL
 
-FORMS    += mainwindow.ui
+

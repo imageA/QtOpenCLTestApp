@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 
-
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -11,6 +10,7 @@
 #include <opencv2/ocl/ocl.hpp>
 
 #include "square_ocl.h"
+#include "performance_ocl.h"
 #include "global.h"
 
 using namespace cv;
